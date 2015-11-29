@@ -1,0 +1,55 @@
+{
+  "name": "Michał Lach",
+  "title": "Front-End Developer",
+  "personal": {
+    "birth": "03.08.1989 Gdynia",
+    "address": "Wójta Radtkego 26/26",
+    "code": "81-355",
+    "country": "Poland",
+    "www": "michal-lach.pl",
+    "email": "kontakt@michal-lach.pl"
+  },
+  "skills": ["HTML5", "CSS3", "Javascript", "LESS", "SASS", "Compass", "Bootstrap", "Skeleton", "Foundation", "960.gs", "jQuery", "lo-dash", "Underscore", "Angular.js", "React", "JSX", "Require.js", "Karma", "Jasmine", "Protractor", "Grunt", "Gulp", "GIT", "Mercurial HG", "SVN"],
+  "experience": [
+    {
+      "company": "EPAM Systems",
+      "from": "May 2015",
+      "to": "present",
+      "position": "UI Developer",
+      "description": "Advanced UI development in HTML5, CSS & JavaScript  frameworks."
+    },
+        {
+      "company": "Misys",
+      "from": "August 2013",
+      "to": "April 2015",
+      "position": "User Interface Developer",
+      "description": "Developing user interfaces in Angular.js and HTML5. Working with REST services. Providing cross-browser compatibility."
+    },
+        {
+      "company": "Expono",
+      "from": "September 2012",
+      "to": "May 2013",
+      "position": "Front-End Developer",
+      "description": "Tworzenie stron opartych o HTML i XHTML. Wdrażanie bibliotek skryptowych (jQuery). Przygotowanie i wdrażanie styli CSS. Weryfikacja kodu pod kątem zgodności ze standardami. Administracja powierzonymi serwisami/systemami.
+"
+    },
+        {
+      "company": "Polskapresse Internet",
+      "from": "June 2012",
+      "to": "September 2012",
+      "position": "Staż",
+      "description": "Tworzenie stron internetowych w oparciu o projekty graficzne. Komunikacja z grafikami. Optymalizacja serwisów WWW. Inspekcje kodu."
+    }
+  ],
+  "education": {
+    "university": "Polsko Japońska Wyższa Szkoła Technik Komputerowych w Gdańsku ",
+    "specialisation": "Informatyka - Aplikacje Internetowe oraz Bazy Danych",
+    "level": "Wyższe - Inżynierskie ",
+    "from": "October 2009",
+    "to": "February 2013"
+  },
+  "extra": {
+    "certificates": ["Cisco Exploration: Network Fundamentals", "First Certificate in English (FCE)"]
+  }
+
+}
