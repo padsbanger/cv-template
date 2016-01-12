@@ -6,6 +6,8 @@ module.exports = function(grunt) {
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
+  var modRewrite = require('connect-modrewrite');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -15,6 +17,14 @@ module.exports = function(grunt) {
       styles: {
         files: ['src/less/**/*.less'],
         tasks: ['less'],
+        options: {
+          livereload: {
+            port: 9000
+          }
+        },
+      },
+      html: {
+        files: ['*.html'],
         options: {
           livereload: {
             port: 9000
@@ -39,8 +49,18 @@ module.exports = function(grunt) {
           port: 1337,
           hostname: '',
           livereload: 9000,
-          open: true
+          open: true,
+          middleware: function(connect, options) {
+            var middlewares = [];
+
+            middlewares.push(modRewrite(['^[^\\.]*$ /index.html [L]'])); //Matches everything that does not contain a '.' (period)
+            options.base.forEach(function(base) {
+              middlewares.push(connect.static(base));
+            });
+            return middlewares;
+          }
         }
+
       }
     },
     less: {
@@ -59,7 +79,7 @@ module.exports = function(grunt) {
         separator: ';',
       },
       app: {
-        src: ['src/js/**/*.js'],
+        src: ['src/js/angular.min.js', 'src/js/angular.route.js', 'src/js/angular-translate.min.js','src/js/app.js', 'src/js/cvCtrl.js'],
         dest: 'build/app.js'
       }
     },

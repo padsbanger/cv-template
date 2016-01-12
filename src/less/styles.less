@@ -1,6 +1,5 @@
 @import 'modules/vars.less';
 @import 'modules/fonts.less';
-
 body {
   background: url('/img/bg.jpg');
   font-family: BebasNeue, Arial;
@@ -11,6 +10,30 @@ body {
   width: 890px;
   margin: 20px auto;
   padding: 30px;
-  height: 300px;
-
+  .cv-main {
+    background: @bg-inner;
+    padding: 0px 30px 20px 30px;
+    position: relative;
+    h3:before {
+      content: ' ';
+      background-image: url('/img/header_arrow.svg');
+      width: 46px;
+      height: 39px;
+      display: inline-block;
+      background-repeat: no-repeat;
+    }
+  }
+  .cv-personal {
+    margin-top: -25px;
+    width: 560px;
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 30px solid @bg;
+      min-width: 50px;
+      max-width: 250px;
+      max-height: 500px;
+    }
+  }
 }

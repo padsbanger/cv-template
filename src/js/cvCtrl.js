@@ -1,9 +1,19 @@
-cvApp.controller('cvCtrl', function($http) {
+cvApp.controller('cvCtrl', function($scope, $http, $routeParams, $translate) {
 
-  $http.get('/data/cv_pl.json').then(function(data) {
+  $scope.data = {}
 
-    console.log(data.data)
+  function getData(lang) {
+    var lang = lang.lang || 'en';
+    $translate.use(lang);
 
-  })
+    $http.get('/data/cv_'+ lang +'.json').then(function(data) {
+      $scope.data = data.data;
+
+    })
+
+  }
+
+  getData($routeParams)
+
 
 })

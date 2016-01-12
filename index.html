@@ -1,14 +1,11 @@
 <html ng-app="cvApp">
   <head>
+  <base href="/">
     <title>Michał Lach | UI Developer</title>
     <link rel="stylesheet" href="build/styles.css">
   </head>
-  <body ng-controller="cvCtrl">
-
-    <div class="cv-container">
-
-    </div>
-
+  <body>
+    <div ng-view></div>
     <script src="build/app.js"></script>
   </body>
 </html>
