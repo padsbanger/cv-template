@@ -8,32 +8,30 @@
     <div class="cv-personal">
       <img src="../img/avatar.jpg" alt="Michał Lach picture">
       <h3>{{ 'PersonalData' | translate }}</h3>
-      <ul ng-repeat="item in data.personal">
-        <li>{{item}}</li>
+      <ul>
+        <li ng-repeat="item in data.personal">{{item}}</li>
       </ul>
     </div>
     <div class="cv-profile">
       <h3>{{ 'PersonalProfile' | translate }}</h3>
-      <ul ng-repeat="skill in data.skills">
-        <li>{{skill}}</li>
+      <ul>
+        <li ng-repeat="skill in data.skills">{{skill}}</li>
       </ul>
     </div>
     <div class="cv-exp">
       <h3>{{ 'Experiance' | translate }}</h3>
-      <ul ng-repeat="exp in data.experience">
-        <li>{{exp}}</li>
+      <ul>
+        <li ng-repeat="job in data.experience">{{job | monthFilter}}</li>
       </ul>
     </div>
     <div class="cv-education">
       <h3>{{ 'Education' | translate }}</h3>
-      <ul ng-repeat="education in data.education">
-        <li>{{education}}</li>
-      </ul>
+      <p>{{data.education}}</p>
     </div>
     <div class="cv-extra">
       <h3>{{ 'AdditionalInformation' | translate }}</h3>
-      <ul ng-repeat="extra in data.extra">
-        <li>{{extra}}</li>
+      <ul>
+        <li ng-repeat="extra in data.extra">{{extra}}</li>
       </ul>
     </div>
   </div>

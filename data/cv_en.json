@@ -13,29 +13,29 @@
   "experience": [
     {
       "company": "EPAM Systems",
-      "from": "May 2015",
+      "from": "01-05-2015",
       "to": "present",
       "position": "UI Developer",
       "description": "Advanced UI development in HTML5, CSS & JavaScript  frameworks."
     },
         {
       "company": "Misys",
-      "from": "August 2013",
-      "to": "April 2015",
+      "from": "01-08-2013",
+      "to": "01-04-2015",
       "position": "User Interface Developer",
       "description": "Developing user interfaces in Angular.js and HTML5. Working with REST services. Providing cross-browser compatibility."
     },
         {
       "company": "Expono",
-      "from": "September 2012",
-      "to": "May 2013",
+      "from": "01-09-2012",
+      "to": "01-05-2013",
       "position": "Front-End Developer",
       "description": "Creating websites from Photoshop layouts. Implementation of script libraries(jQuery). Code verification for compliance withth estandards. Administration with assigned sites and systems."
     },
         {
       "company": "Polskapresse Internet",
-      "from": "June 2012",
-      "to": "September 2012",
+      "from": "01-06-2012",
+      "to": "30-09-2012",
       "position": "Internship",
       "description": "Creating websites based on graphic designs.Communication with graphic designers. Optimizing websites for high traffic. Code inspections."
     }

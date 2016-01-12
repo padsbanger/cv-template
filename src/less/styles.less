@@ -35,5 +35,33 @@ body {
       max-width: 250px;
       max-height: 500px;
     }
+    ul {
+      li:before {
+        content: " ";
+        display: inline-block;
+        background-repeat: no-repeat;
+        height: 56px;
+        width: 30px;
+      }
+      li:first-child:before {
+        background-image: url('/img/personal_icon.svg');
+      }
+      li:nth-child(2) {
+        color: yellow;
+      }
+      li:nth-child(3) {
+        color: red;
+      }
+      li:nth-child(4) {
+        color: red;
+      }
+      li:nth-child(5) {
+        color: red;
+      }
+      li:last-child {
+        color: blue;
+      }
+    }
+
   }
 }

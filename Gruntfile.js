@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         },
       },
       html: {
-        files: ['*.html'],
+        files: ['*.html', 'views/cv.html'],
         options: {
           livereload: {
             port: 9000
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
         separator: ';',
       },
       app: {
-        src: ['src/js/angular.min.js', 'src/js/angular.route.js', 'src/js/angular-translate.min.js','src/js/app.js', 'src/js/cvCtrl.js'],
+        src: ['src/js//moment.js','src/js/angular.min.js', 'src/js/angular.route.js', 'src/js/angular-translate.min.js','src/js/app.js', 'src/js/cvCtrl.js'],
         dest: 'build/app.js'
       }
     },
