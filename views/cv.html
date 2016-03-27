@@ -7,32 +7,61 @@
   <div class="cv-main">
     <div class="cv-personal">
       <img src="../img/avatar.jpg" alt="Michał Lach picture">
-      <h3>{{ 'PersonalData' | translate }}</h3>
-      <ul>
-        <li ng-repeat="item in data.personal">{{item}}</li>
-      </ul>
+      <h3><span class="icon-arrow"></span><p>{{ 'PersonalData' | translate }}</p></h3>
+        <ul>
+          <li ng-repeat="item in data.personal" class={{item.name}}>
+            <span>{{item.value}}</span>
+          </li>
+        </ul>
+
+
     </div>
     <div class="cv-profile">
-      <h3>{{ 'PersonalProfile' | translate }}</h3>
+      <h3><span class="icon-arrow"></span><p>{{ 'PersonalProfile' | translate }}</p></h3>
       <ul>
         <li ng-repeat="skill in data.skills">{{skill}}</li>
       </ul>
+      <img class="profile-bg" src="../img/profile.svg" alt="">
     </div>
-    <div class="cv-exp">
-      <h3>{{ 'Experiance' | translate }}</h3>
+    <div class="cv-experiance">
+      <h3><span class="icon-arrow"></span><p>{{ 'Experiance' | translate }}</p></h3>
       <ul>
-        <li ng-repeat="job in data.experience">{{job | monthFilter}}</li>
+        <li ng-repeat="job in data.experience">
+          <div class="ribbon"><span>{{job | monthFilter}}</span></div>
+          <div class="cv-info">
+            <h4 class="cv-company">{{job.company}}</h4>
+            <h4 class="cv-time">from {{job.from}} to {{job.to}}</h4>
+            <p>{{job.description}}</p>
+          </div>
+          <div class="cv-position">
+            <span>{{job.position}}</span>
+          </div>
+        </li>
       </ul>
     </div>
     <div class="cv-education">
-      <h3>{{ 'Education' | translate }}</h3>
-      <p>{{data.education}}</p>
+      <h3><span class="icon-arrow"></span><p>{{ 'Education' | translate }}</p></h3>
+      <ul>
+        <li ng-repeat="education in data.education">
+          <div class="ribbon"><span>3 years</span></div>
+          <div class="cv-info">
+            <h4 class="cv-company">{{education.university}}</h4>
+            <h4 class="cv-company">{{education.level}}</h4>
+            <h4 class="cv-time">from {{education.from}} to {{education.to}}</h4>
+            <h4 class="cv-company">{{education.specialisation}}</h4>
+          </div>
+          <div class="cv-position">
+            <span>{{job.position}}</span>
+          </div>
+        </li>
+      </ul>
+
     </div>
-    <div class="cv-extra">
-      <h3>{{ 'AdditionalInformation' | translate }}</h3>
+<!--     <div class="cv-extra">
+      <h3><span class="icon-arrow"></span><p>{{ 'AdditionalInformation' | translate }}</p></h3>
       <ul>
         <li ng-repeat="extra in data.extra">{{extra}}</li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </div>

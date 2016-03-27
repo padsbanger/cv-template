@@ -1,54 +1,57 @@
 {
-  "name": "Michał Lach",
-  "title": "Front-End Developer",
-  "personal": {
-    "birth": "03.08.1989 Gdynia",
-    "address": "Wójta Radtkego 26/26",
-    "code": "81-355",
-    "country": "Poland",
-    "www": "michal-lach.pl",
-    "email": "kontakt@michal-lach.pl"
-  },
-  "skills": ["HTML5", "CSS3", "Javascript", "LESS", "SASS", "Compass", "Bootstrap", "Skeleton", "Foundation", "960.gs", "jQuery", "lo-dash", "Underscore", "Angular.js", "React", "JSX", "Require.js", "Karma", "Jasmine", "Protractor", "Grunt", "Gulp", "GIT", "Mercurial HG", "SVN"],
-  "experience": [
-    {
-      "company": "EPAM Systems",
-      "from": "01-05-2015",
-      "to": "present",
-      "position": "UI Developer",
-      "description": "Advanced UI development in HTML5, CSS & JavaScript  frameworks."
-    },
-        {
-      "company": "Misys",
-      "from": "01-08-2013",
-      "to": "01-04-2015",
-      "position": "User Interface Developer",
-      "description": "Developing user interfaces in Angular.js and HTML5. Working with REST services. Providing cross-browser compatibility."
-    },
-        {
-      "company": "Expono",
-      "from": "01-09-2012",
-      "to": "01-05-2013",
-      "position": "Front-End Developer",
-      "description": "Creating websites from Photoshop layouts. Implementation of script libraries(jQuery). Code verification for compliance withth estandards. Administration with assigned sites and systems."
-    },
-        {
-      "company": "Polskapresse Internet",
-      "from": "01-06-2012",
-      "to": "30-09-2012",
-      "position": "Internship",
-      "description": "Creating websites based on graphic designs.Communication with graphic designers. Optimizing websites for high traffic. Code inspections."
+    "name": "Michał Lach",
+    "title": "Front-End Developer",
+    "personal": [{
+        "name": "birth",
+        "value": "03.08.1989 Gdynia"
+    }, {
+        "name": "address",
+        "value": "Wójta Radtkego 26/26 81-355 Gdynia"
+    },  {
+        "name": "phone",
+        "value": "781173589"
+    }, {
+        "name": "www",
+        "value": "michal-lach.pl"
+    }, {
+        "name": "email",
+        "value": "kontakt@michal-lach.pl"
+    }],
+    "skills": ["HTML5", "CSS3", "Javascript", "LESS", "SASS", "Compass", "Bootstrap", "Skeleton", "Foundation", "960.gs", "jQuery", "lo-dash", "Underscore", "Angular.js", "React", "JSX", "Require.js", "Karma", "Jasmine", "Protractor", "Grunt", "Gulp", "GIT", "Mercurial HG", "SVN"],
+    "experience": [{
+        "company": "EPAM Systems",
+        "from": "01-05-2015",
+        "to": "present",
+        "position": "UI Developer",
+        "description": "Advanced UI development in HTML5, CSS & JavaScript  frameworks."
+    }, {
+        "company": "Misys",
+        "from": "01-08-2013",
+        "to": "01-04-2015",
+        "position": "User Interface Developer",
+        "description": "Developing user interfaces in Angular.js and HTML5. Working with REST services. Providing cross-browser compatibility."
+    }, {
+        "company": "Expono",
+        "from": "01-09-2012",
+        "to": "01-05-2013",
+        "position": "Front-End Developer",
+        "description": "Creating websites from Photoshop layouts. Implementation of script libraries(jQuery). Code verification for compliance withth estandards. Administration with assigned sites and systems."
+    }, {
+        "company": "Polskapresse Internet",
+        "from": "01-06-2012",
+        "to": "30-09-2012",
+        "position": "Internship",
+        "description": "Creating websites based on graphic designs.Communication with graphic designers. Optimizing websites for high traffic. Code inspections."
+    }],
+    "education": [{
+        "university": "Polish-Japanese Institute of Information Technology in Gdańsk",
+        "specialisation": "Web applications and databases",
+        "level": "Bachelor`s degree",
+        "from": "October 2009",
+        "to": "February 2013"
+    }],
+    "extra": {
+        "certificates": ["Cisco Exploration: Network Fundamentals", "First Certificate in English (FCE)"]
     }
-  ],
-  "education": {
-    "university": "Polish-Japanese Institute of Information Technology in Gdańsk",
-    "specialisation": "Web applications and databases",
-    "level": "Bachelor`s degree",
-    "from": "October 2009",
-    "to": "February 2013"
-  },
-  "extra": {
-    "certificates": ["Cisco Exploration: Network Fundamentals", "First Certificate in English (FCE)"]
-  }
 
 }
